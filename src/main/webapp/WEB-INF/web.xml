@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>JavaProject</display-name>
+  <servlet>
+  <servlet-name>FirstServlet</servlet-name>
+  <servlet-class>basicServlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>FirstServlet</servlet-name>
+  <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>AddServlet</servlet-name>
+  <servlet-class>basicServlet.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddServlet</servlet-name>
+  <url-pattern>/addNumbers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>UserDetailsServlet</servlet-name>
+        <servlet-class>basicServlet.UserDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDetailsServlet</servlet-name>
+        <url-pattern>/UserDetailsServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
